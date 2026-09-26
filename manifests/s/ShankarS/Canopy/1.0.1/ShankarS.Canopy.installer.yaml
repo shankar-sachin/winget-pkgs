@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+PackageIdentifier: ShankarS.Canopy
+PackageVersion: 1.0.1
+InstallerType: zip
+NestedInstallerType: portable
+MinimumOSVersion: 10.0.17763.0
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Git.Git
+ReleaseDate: 2026-09-26
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: canopy-v1.0.1-x86_64-pc-windows-msvc\canopy.exe
+    PortableCommandAlias: canopy
+  InstallerUrl: https://github.com/shankar-sachin/canopy/releases/download/v1.0.1/canopy-v1.0.1-x86_64-pc-windows-msvc.zip
+  InstallerSha256: AAAE7A809761C8B2A743C5F6AB23E7F9FCF928E4B48D1A5C69F49E514863D026
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: canopy-v1.0.1-aarch64-pc-windows-msvc\canopy.exe
+    PortableCommandAlias: canopy
+  InstallerUrl: https://github.com/shankar-sachin/canopy/releases/download/v1.0.1/canopy-v1.0.1-aarch64-pc-windows-msvc.zip
+  InstallerSha256: 1F03C7E39E9EA24247E172861D198DFC64B4E54C818979F45CDB77AA2D58B47E
+ManifestType: installer
+ManifestVersion: 1.9.0
